@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="icon" type="image/x-icon" href="Media/logo.ico">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="hamburgerMenu.css">
+    <link rel="stylesheet" href="gallery_stylesheet.css">
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<header class="site-header" id="gallery">
+    <div class="header-container">
+        <a href="index.html" title="Back to homepage">
+            <img src="Media/logo.png" height=100 alt="Shuhang's Logo" id="logo">
+        </a>
+        <!-- Navbar -->
+        <nav id="header-nav">
+            <!-- Shuhang's Logo -->
+
+            <ul class="header-nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="resume.html">Resume</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="gallery_intro">
+        <h1>Welcome to Shuhang' Gallery</h1>
+        <h2>Check the pictures and video I take</h2>
+    </div>
+</header>
+<main>
+    <div class="sideBar">
+        <b>Here is a quick navigation of the gallery page</b>
+        <ul>
+            <li><a href="#gallery">Top</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#picture">Picture</a></li>
+            <li><a href="#socialMedia">Social Media</a></li>
+        </ul>
+    </div>
+
+    <br>
+
+    <section id="video">
+        <h2>Please watch the video I made with my DJI Drone</h2>
+        <!-- Videos -->
+        <video controls style="width: 60vw;">
+            <source src="Media/ucsd.mp4" type="video/mp4">
+        </video>
+        <p>To watch the video of full <span style="color:blue;font-weight: bold">resolution </span>please head to <a href="https://youtu.be/3goq1T45vyA">YouTube</a>
+        </p>
+    </section>
+
+    <br><br>
+    <section id="picture">
+        <!-- Pictures -->
+        <h2>Here are the pictures I take</h2>
+        <div class="flex-container">
+            <img src="Media/bridge.jpg" style="width:30vw" alt="Ellen Browning Scripps Memorial Pier" class="flex-item">
+            <img src="Media/cars.jpg" style="width:30vw" alt="Night of La Jolla Freeway" class="flex-item">
+            <img src="Media/cars2.jpg" style="width:30vw" alt="Night of La Jolla Freeway from a Hole" class="flex-item">
+            <img src="Media/shore.jpg" style="width:30vw" alt="La Jolla Shore" class="flex-item">
+            <img src="Media/shore2.jpg" style="width:30vw" alt="La Jolla Shore" class="flex-item">
+            <img src="Media/shore3.jpg" style="width:30vw" alt="La Jolla Shore" class="flex-item">
+            <img src="Media/sunset.jpg" style="width:30vw " alt="Sunset of La Jolla" class="flex-item">
+            <img src="Media/sunset2.jpg" style="width:30vw" alt="Sunset of La Jolla" class="flex-item">
+            <img src="Media/fallenstar.jpg" style="width:30vw" alt="Fallen Star" class="flex-item">
+        </div>
+    </section>
+
+    <br><br>
+
+    <section id="socialMedia">
+        <h2>Social Media Account</h2>
+        <table>
+            <colgroup>
+                <col span="1" style="background-color:orange">
+                <col style="background-color: orchid">
+            </colgroup>
+            <tr>
+                <th>Platform</th>
+                <th>Account</th>
+            </tr>
+            <tbody>
+            <tr>
+                <td>Instagram</td>
+                <td>@Great_Shuhang</td>
+            </tr>
+            <tr>
+                <td>Wechat</td>
+                <td>Great_Shuhang</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td>Facebook</td>
+                <td>xizhilang0805</td>
+            </tr>
+            </tfoot>
+        </table>
+
+    </section>
+
+</main>
+
+<footer>
+    <hr>
+    <p>Copyright @Great_Shuhang</p>
+</footer>
+</body>
+</html>

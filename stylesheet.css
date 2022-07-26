@@ -1,0 +1,79 @@
+#top {
+    background-image: url("Media/background.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.site-header .header-container {
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: transparent;
+}
+
+#header-nav {
+    display: inline;
+    flex-direction: row;
+    transition: all 0.5s ease-out;
+}
+
+#header-nav ul {
+    margin: 1em 0.5em;
+    text-align: center;
+}
+
+#header-nav li {
+    display: inline;
+}
+
+#header-nav a {
+    display: inline-block;
+    padding: 1em 1em;
+    font-size: x-large;
+    color: limegreen;
+    text-decoration: none;
+}
+
+#header-nav a:hover, #header-nav a:focus{
+    color: #1fd655;
+}
+
+.header-container > a > img{
+    animation: skew 3s infinite;
+    transform: skew(10deg);
+    animation-direction: alternate;
+}
+@keyframes skew {
+    0% {
+        transform: skew(10deg, 10deg);
+    }
+    100% {
+        transform: skew(-10deg, -10deg);
+    }
+}
+
+.sideBar{
+    position: fixed;
+    color: white;
+    background: cornflowerblue;
+    width: 10vw;
+    top: 30vh;
+    left: 85vw;
+    text-align: left;
+}
+
+footer{
+    text-align: center;
+    color: white;
+}
+
+body{
+    background: steelblue;
+}
+
+main{
+    color: white;
+}

@@ -1,0 +1,30 @@
+#resume{
+    background-image: url("Media/starBlue.jpg");
+    height: 100vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    font-size: xxx-large;
+    color:white;
+    text-align: center;
+}
+#resume h1{
+    font-size: xxx-large;
+}
+#resume h2{
+    font-size: xx-large;
+}
+
+.resume{
+    text-align: center;
+    
+}
+
+h3{
+    font-size: xx-large;
+}
+
+embed{
+    width: 60vw;
+}

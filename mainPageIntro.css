@@ -1,0 +1,78 @@
+.intro {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 80vh;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+.animated-head{
+    text-transform: uppercase;
+    background-image: linear-gradient(
+            -225deg,
+            rgba(84, 250, 209, 0.99) 0%,
+            #ba4acb 29%,
+            #ff1361 67%,
+            #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 190px;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.intro > h2{
+    font-family: "Brush Script MT", cursive;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.li_title{
+    font-size: x-large;
+}
+
+.ul_title{
+    font-size: 0.8em;
+}
+
+h3{
+    font-size: xx-large;
+}
+
+body{
+    background: steelblue;
+}
+
+main{
+    color: white;
+}
