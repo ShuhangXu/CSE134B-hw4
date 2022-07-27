@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Native Dialogs</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.10/purify.js" type="text/javascript"></script>
+</head>
+<body>
+<main>
+    <h1>Simple Dialogs</h1>
+    <button id="alert_btn">Alert</button>
+    <button id="confirm_btn">Confirm</button>
+    <button id="prompt_btn">Prompt</button>
+    <button id="safer_prompt_btn">Safer Prompt</button>
+
+    <hr>
+
+    <output id="final_output"></output>
+
+    <script>
+        const alert_button = document.getElementById("alert_btn");
+        const confirm_button = document.getElementById("confirm_btn");
+        const prompt_button = document.getElementById("prompt_btn");
+        const safer_prompt_button = document.getElementById("safer_prompt_btn");
+        let final_output = output_text = document.getElementById("final_output");
+
+        alert_button.addEventListener("click", function(){
+            window.alert("Alert pressed!");
+        });
+
+        confirm_button.addEventListener("click", () =>{
+            if(window.confirm("Do you confirm this?")){
+                final_output.innerText = 'The value returned by the confirm method is : Ok';
+            }
+            else{
+                final_output.innerText = 'The value returned by the confirm method is : No';
+            }
+        });
+
+        prompt_button.addEventListener("click", function(){
+            let text_input = window.prompt("This is a prompt. Write something here!");
+            if(text_input){
+                final_output.innerHTML = `Prompt result: ${text_input}`;
+            }
+            else{
+                final_output.innerText = 'User didn\'t enter anything';
+            }
+        });
+
+        safer_prompt_button.addEventListener("click", function(){
+            let text_input = window.prompt("This is a safer prompt. Write something here!");
+            let clean = DOMPurify.sanitize(text_input);
+            if(clean){
+                final_output.innerHTML = `Prompt result: ${clean}`;
+            }
+            else{
+                final_output.innerText = `User didn’t` + ` enter anything`;
+            }
+        })
+
+    </script>
+</main>
+</body>
+</html>

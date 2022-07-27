@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Dialogs</title>
+    <script type="module" defer src="customDialog.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.10/purify.js" type="text/javascript"></script>
+</head>
+<body>
+<main>
+    <h1>Custom Dialogs</h1>
+    <button id="alert_btn">Alert</button>
+    <button id="confirm_btn">Confirm</button>
+    <button id="prompt_btn">Prompt</button>
+
+    <br>
+
+    <output id="final_output"></output>
+
+    <dialog id="alert_dialogs">
+        <p>Alert pressed!</p>
+        <form method="dialog">
+            <button>OK</button>
+        </form>
+    </dialog>
+
+    <dialog id="confirm_dialogs">
+        <p>Do you confirm this?</p>
+        <form method="dialog">
+            <button id="cf_cancel_button">Cancel</button>
+            <button id="cf_ok_button">OK</button>
+        </form>
+    </dialog>
+
+    <dialog id="prompt_dialogs">
+        <p>Do you confirm this?</p>
+        <form method="dialog">
+            <button id="pt_cancel_button">Cancel</button>
+            <button id="pt_ok_button">OK</button>
+        </form>
+    </dialog>
+</main>
+
+</body>
+</html>
