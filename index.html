@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="hamburgerMenu.css">
     <link rel="stylesheet" href="mainPageIntro.css">
     <link rel="icon" type="image/x-icon" href="Media/logo.ico">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="module" src="./index.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HK5RL1K5Z7"></script>
     <script>
@@ -204,8 +206,21 @@
                 </ul>
             </li>
         </ul>
-
     </section>
+
+    <h3>My current location</h3>
+    <div id="googleMap" style="width:80vw;height:40vh; left: 100px"></div>
+    <script>
+        function myMap() {
+            var mapProp= {
+                center:new google.maps.LatLng(32.879244, -117.231125),
+                zoom:14,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKRBoa50R7zgvvC5wYxMkF75bJDpo16qA&callback=myMap"></script>
 
 </main>
 

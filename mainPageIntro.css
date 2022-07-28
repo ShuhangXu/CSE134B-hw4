@@ -7,6 +7,10 @@
     animation-name: slidein;
 }
 
+#map {
+    height: 100%;
+}
+
 .animated-head{
     text-transform: uppercase;
     background-image: linear-gradient(
@@ -20,7 +24,7 @@
     background-clip: border-box;
     background-size: 200% auto;
     color: #fff;
-    background-clip: text;
+    background-clip: border-box;
     text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
