@@ -7,6 +7,9 @@
   <script type="module" defer src="crubHelper.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../Media/logo.ico">
+  <link rel="stylesheet" href="../stylesheet.css">
+  <link rel="stylesheet" href="../hamburgerMenu.css">
 
   <template id="post_layout">
     <post-article id="each_post">
@@ -26,6 +29,43 @@
 
 
 <body>
+<header class="site-header" id="post_page">
+  <div class="header-container">
+    <a href="../index.html" title="Back to homepage">
+      <img src="../Media/logo.png" height=100 alt="Shuhang's Logo" id="logo">
+    </a>
+    <!-- Navbar -->
+    <nav id="header-nav">
+      <!-- Shuhang's Logo -->
+
+      <ul class="header-nav-list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../resume.html">Resume</a></li>
+        <li><a href="../gallery.html">Gallery</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        <li><a href="stylecrud.html">Post</a></li>
+      </ul>
+    </nav>
+
+    <div class="menu-wrap">
+      <input type="checkbox" class="toggler">
+      <div class="hamburger"><div></div></div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../resume.html">Resume</a></li>
+              <li><a href="../gallery.html">Gallery</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+              <li><a href="stylecrud.html">Post</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
 <main>
 <h1>Welcome to Shuhang's Blog</h1>
 <!-- We need a section to display all the posts -->
