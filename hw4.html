@@ -3,15 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <title>HW4</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="hamburgerMenu.css">
+    <style>
+        li > a{
+            color: white;
+        }
+    </style>
 </head>
 <body>
-<h1>HW4 Link Collection</h1>
-<ul>
-  <li><a href="hw4/customDialogs.html">Custom Dialogs</a></li>
-  <li><a href="hw4/nativedialogs.html">Native Dialogs</a></li>
-  <li><a href="hw4/crub.html">Crub</a></li>
-  <li><a href="hw4/stylecrud.html">Style Crub</a></li>
-</ul>
+<header class="site-header" id="post_page">
+    <div class="header-container">
+        <a href="../index.html" title="Back to homepage">
+            <img src="../Media/logo.png" height=100 alt="Shuhang's Logo" id="logo">
+        </a>
+        <!-- Navbar -->
+        <nav id="header-nav">
+            <!-- Shuhang's Logo -->
 
+            <ul class="header-nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="hw4/stylecrud.html">Post</a></li>
+                <li><a href="hw4.html">HW4</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="resume.html">Resume</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="hw4/stylecrud.html">Post</a></li>
+                            <li><a href="hw4.html">HW4</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main style="text-align: center;">
+    <div>
+        <h1>HW4 Link Collection</h1>
+        <ul style="color: white">
+          <li><a href="hw4/customDialogs.html">Custom Dialogs</a></li>
+          <li><a href="hw4/nativedialogs.html">Native Dialogs</a></li>
+          <li><a href="hw4/crub.html">Crub</a></li>
+          <li><a href="hw4/stylecrud.html">Style Crub</a></li>
+        </ul>
+    </div>
+</main>
 </body>
 </html>
