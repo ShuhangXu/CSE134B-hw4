@@ -1,0 +1,40 @@
+*{
+    text-align: center;
+}
+
+#posts{
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px;
+    margin: 50px;
+}
+
+#each_post{
+    text-align: center;
+    margin: 2vh;
+    width: 20vw;
+    padding: 10px;
+    background: orange;
+}
+
+#addButton{
+    background: greenyellow;
+    font-size: large;
+}
+
+#creat_new_post, #edit_post{
+    text-align: left;
+    width: 40vw;
+}
+
+post-edit > button{
+    background: limegreen;
+    color:white;
+}
+
+post-delete > button{
+    background: #ff1361;
+    color:white;
+}

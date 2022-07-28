@@ -24,10 +24,12 @@
         const safer_prompt_button = document.getElementById("safer_prompt_btn");
         let final_output = output_text = document.getElementById("final_output");
 
+        // If click, alert
         alert_button.addEventListener("click", function(){
             window.alert("Alert pressed!");
         });
 
+        // If click, it will return value that shows if confirm
         confirm_button.addEventListener("click", () =>{
             if(window.confirm("Do you confirm this?")){
                 final_output.innerText = 'The value returned by the confirm method is : Ok';
@@ -37,6 +39,7 @@
             }
         });
 
+        // If click, output is user input. Alert is allowed
         prompt_button.addEventListener("click", function(){
             let text_input = window.prompt("This is a prompt. Write something here!");
             if(text_input){
@@ -47,6 +50,7 @@
             }
         });
 
+        // If click, output is user input. Alert is not allowed
         safer_prompt_button.addEventListener("click", function(){
             let text_input = window.prompt("This is a safer prompt. Write something here!");
             let clean = DOMPurify.sanitize(text_input);

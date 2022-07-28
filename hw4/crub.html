@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>crud</title>
+  <script type="module" defer src="crubHelper.js"></script>
+  <template id="post_layout">
+    <post-article>
+      <post-title><h1></h1></post-title>
+      <post-date><p></p></post-date>
+      <post-summary><p></p></post-summary>
+      <post-edit>
+        <button>Edit</button>
+      </post-edit>
+      <post-delete>
+        <button>Delete</button>
+      </post-delete>
+    </post-article>
+  </template>
+</head>
+
+<body>
+<main>
+  <h1>Welcome to Shuhang's Blog</h1>
+  <!-- We need a section to display all the posts-->
+  <section id="posts"></section>
+  <br>
+  <hr/>
+  <br>
+  <button id="addButton">Let's add a new post</button>
+
+<dialog id="creat_new_post">
+  <form id="add_form">
+    <fieldset>
+      <h1>Add a new post here</h1>
+
+      <label for="title">Title</label>
+      <input type="text" id="title" name="title">
+
+      <label for="date">Date</label>
+      <input type="date" id="date" name="date">
+
+      <br>
+
+      <label for="summary">Summary</label>
+      <textarea id="summary" name="summary"></textarea>
+
+      <button id="submit">Post</button>
+    </fieldset>
+  </form>
+</dialog>
+
+<dialog id="edit_post">
+  <form>
+    <h1>Edit the existing post</h1>
+
+    <label for="new_title">Title</label>
+    <input type="text" id="new_title" name="new_title">
+
+    <label for="new_date">Date</label>
+    <input type="date" id="new_date" name="new_date">
+
+    <label for="new_summary">Summary</label>
+    <textarea id="new_summary" name="new_summary"></textarea>
+
+    <button id="new_submit">Update</button>
+    <button>cancel</button>
+  </form>
+</dialog>
+</main>
+</body>
+</html>

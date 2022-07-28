@@ -1,5 +1,5 @@
-#top {
-    background-image: url("Media/background.jpg");
+top {
+    background-image: url("../Media/background.jpg");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;

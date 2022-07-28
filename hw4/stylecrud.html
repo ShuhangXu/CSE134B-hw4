@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>styled crud</title>
+  <link href="crub_style.css" rel="stylesheet">
+  <script type="module" defer src="crubHelper.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <template id="post_layout">
+    <post-article id="each_post">
+      <post-title><h1></h1></post-title>
+      <post-date><p></p></post-date>
+      <post-summary><p style="font-family: 'Century Schoolbook'"></p></post-summary>
+      <br>
+      <post-edit>
+        <button style="font-size:20px">Edit <i class="fa fa-pencil"></i></button>
+      </post-edit>
+      <post-delete>
+        <button style="font-size:20px">Delete <i class="fa fa-trash-o"></i></button>
+      </post-delete>
+    </post-article>
+  </template>
+</head>
+
+
+<body>
+<main>
+<h1>Welcome to Shuhang's Blog</h1>
+<!-- We need a section to display all the posts -->
+<section id="posts" class="post_container"></section>
+<br>
+<hr/>
+<br>
+<button id="addButton">Let's add a new post</button>
+
+<dialog id="creat_new_post">
+  <form id="add_form">
+    <fieldset>
+      <h1>Add a new post here</h1>
+      <br><br>
+      <label for="title">Title</label>
+      <input type="text" id="title" name="title">
+      <br><br>
+      <label for="date">Date</label>
+      <input type="date" id="date" name="date">
+      <br><br>
+      <label for="summary">Summary</label>
+      <textarea id="summary" name="summary" cols="30" rows="3"></textarea>
+      <br><br>
+      <button id="submit">Post</button>
+    </fieldset>
+  </form>
+</dialog>
+
+<dialog id="edit_post">
+  <form>
+    <h1>Edit the existing post</h1>
+    <br><br>
+    <label for="new_title">Title</label>
+    <input type="text" id="new_title" name="new_title">
+    <br><br>
+    <label for="new_date">Date</label>
+    <input type="date" id="new_date" name="new_date">
+    <br><br>
+    <label for="new_summary">Summary</label>
+    <textarea id="new_summary" name="new_summary" cols="30" rows="3"></textarea>
+    <br><br>
+    <button id="new_submit">Update</button>
+    <button>cancel</button>
+  </form>
+</dialog>
+</main>
+</body>
+</html>
