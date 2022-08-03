@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function (){
         addPostForm.addEventListener("submit", (func) =>{
             // Prevent duplication
             func.preventDefault();
-
             // Store what the user input
             const formData = new FormData(func.target);
             console.log(formData);
@@ -40,6 +39,8 @@ document.addEventListener("DOMContentLoaded", function (){
             // Add the new posts and refresh the page
             blog.insertPost(post);
             blog.redisplayAllPosts(postsContainer);
+            addPostForm.reset();
+            creatDialog.close();
         });
     });
 });
